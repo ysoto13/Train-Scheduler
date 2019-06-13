@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,8 @@
     <link href="assets/css/reset.css">
 
     <!-- link bootstrap css -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- link my css -->
     <link rel="stylesheet" text="text/css" href="assets/css/style.css">
@@ -17,27 +19,53 @@
 
     <title>Train-Scheduler</title>
 </head>
+
 <body>
 
-        <div class="card">
-                <div class="card-header">
-                  Current Train Schedule
-                </div>
-                <div class="card-body">
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                </div>
-              </div>
+    <div class="card">
+        <div class="card-header">
+            Current Train Schedule
+        </div>
+        <div class="card-body">
+            <p class="card-text"></p>
+        </div>
+    </div>
 
-              <br>
+    <br>
 
-              <div class="card">
-                    <div class="card-header">
-                      Add Another Train
+    <div class="card">
+        <div class="card-header">
+            Add Another Train
+        </div>
+        <div class="card-body">
+            <p class="card-text">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputName1">Train Name</label>
+                        <input type="name" class="form-control" id="exampleInputName1" aria-describedby="nameHelp"
+                            placeholder="enter train name">
                     </div>
-                    <div class="card-body">
-                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <div class="form-group">
+                        <label for="exampleInputDestination1">Destination</label>
+                        <input type="destination" class="form-control" id="exampleInputDestination1" placeholder="add destination name here">
                     </div>
-                  </div>
+                    <div class="form-group">
+                        <label for="exampleInputTime1">First Train Time (HH:mm- military time)</label>
+                        <input type="time" class="form-control" id="exampleInputTime1" placeholder="add time here">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputFrequency1">Frequency(min)</label>
+                        <input type="frequency" class="form-control" id="exampleInputFrequency1" placeholder="add frequency here">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+
+
+
+
+            </p>
+        </div>
+    </div>
 
 
 
@@ -47,26 +75,27 @@
 
 
 
-    
-<!-- add the link from firebase -->
 
- <!-- Bootstrap JS -->
- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
- integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
- crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
- integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
- crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
- integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
- crossorigin="anonymous"></script>
+    <!-- add the link from firebase -->
 
-<!-- link to my js -->
-<link href="assets/js/train.js">
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- link to my js -->
+    <link href="assets/js/train.js">
 
 
 
 
 
 </body>
+
 </html>
