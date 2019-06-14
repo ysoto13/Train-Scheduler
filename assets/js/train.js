@@ -1,3 +1,6 @@
+$(document).ready(function() {
+    console.log("ready!")
+
 // Your web app's Firebase configuration
 var firebaseConfig = {
     apiKey: "AIzaSyCPGm4_0j3pWqbT8uISmIJO4jESE9UL0IQ",
@@ -27,11 +30,11 @@ $("#add-train").on("click", function (event) {
     event.preventDefault(event);
 
     trainNames = $("#name-input").val().trim().
-        trainDestinations = $("#destination-input").val().trim().
-            trainFrequencies = $("#frequency-input").val().trim().
-                firstTrain = $("#time-input").val().trim().
+    trainDestinations = $("#destination-input").val().trim().
+    trainFrequencies = $("#frequency-input").val().trim().
+    firstTrain = $("#time-input").val().trim().
 
-                    console.log(trainNames);
+    console.log(trainNames);
     console.log(trainDestinations);
     console.log(trainFrequencies);
     console.log(firstTrain);
@@ -105,4 +108,5 @@ $("#add-train").on("click", function (event) {
 
 
     });
+});
 });
