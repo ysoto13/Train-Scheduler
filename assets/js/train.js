@@ -65,7 +65,28 @@ $("#add-train").on("click", function (event) {
         var tnMinutesAway = databaseData.val().dataFirstTrain;
 
 
-        // new arrival and minutes away section
+        var frequency = 5;
+
+        var firstTime = "06:00";
+
+        var firstTimeChange = moment(firstTime, "HH:mm").subtract(1, "years");
+        console.log(firstTimeChange);
+
+        var TimeCurrently = moment();
+        console.log("CURRENT TIME: " + moment(TimeCurrently).format("hh:mm"));
+
+        var differentTime = moment().different(moment(firstTimeChange), "minutes");
+        console.log("DIFFERENCE IN TIME: " + differentTime);
+
+        var tmRemainder = differentTime % frequency;
+        console.log(tmRemainder);
+
+        var tmMinutesUntilTrain = frequency - tmRemainder;
+        console.log("MINUTES UNTIL TRAIN: " + tmMinutesUntilTrain);
+
+        var nextTrain = moment().add(tmMinutesUntilTrain, "minutes");
+        console.log("ARRIVAL TIME: " + moment(nextTrain).format("hh:mm"));
+
 
 
         var tr = $("<tr");
