@@ -37,11 +37,11 @@
                         <th>Minutes Away</th>
                     </tr>
                     <tr>
-                        <td>y</td>
-                        <td>y</td>
-                        <td>y</td>
-                        <td>y</td>
-                        <td>y</td>
+                        <!-- <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td> -->
                     </tr>
                 </table>
             </p>
@@ -58,22 +58,22 @@
             <p class="card-text">
                 <form>
                     <div class="form-group">
-                        <label for="exampleInputName1">Train Name</label>
-                        <input type="name" class="form-control" id="exampleInputName1" aria-describedby="nameHelp"
+                        <label for="name-input">Train Name</label>
+                        <input type="name" class="form-control" id="name-input" aria-describedby="nameHelp"
                             placeholder="enter train name">
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputDestination1">Destination</label>
-                        <input type="destination" class="form-control" id="exampleInputDestination1"
+                        <label for="destination-input">Destination</label>
+                        <input type="destination" class="form-control" id="destination-input"
                             placeholder="add destination name here">
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputTime1">First Train Time (HH:mm- military time)</label>
-                        <input type="time" class="form-control" id="exampleInputTime1" placeholder="add time here">
+                        <label for="time-input">First Train Time (HH:mm- military time)</label>
+                        <input type="time" class="form-control" id="time-input" placeholder="add time here">
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputFrequency1">Frequency(min)</label>
-                        <input type="frequency" class="form-control" id="exampleInputFrequency1"
+                        <label for="frquency-input">Frequency(min)</label>
+                        <input type="frequency" class="form-control" id="frequency-input"
                             placeholder="add frequency here">
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
@@ -81,6 +81,8 @@
             </p>
         </div>
     </div>
+
+<div id="add-train"></div>
 
     <!-- add the link from firebase -->
     <!-- The core Firebase JS SDK is always required and must be listed first -->
