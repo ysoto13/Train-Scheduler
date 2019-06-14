@@ -21,6 +21,7 @@
     <!-- add the link from firebase -->
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-database.js"></script>
 
     <!-- link font-family -->
 
@@ -28,6 +29,18 @@
 </head>
 
 <body>
+
+
+    <div class="jumbotron">
+        <h1 class="display-4">Hello, world!</h1>
+        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
+            featured content or information.</p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    </div>
+
+
 
     <div class="card"></div>
     <div class="card-header">
@@ -43,13 +56,7 @@
                     <th>Next Arrival</th>
                     <th>Minutes Away</th>
                 </tr>
-                <tr>
-                    <!-- <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td> -->
-                </tr>
+                <tbody></tbody>
             </table>
         </p>
     </div>
@@ -76,20 +83,18 @@
                     </div>
                     <div class="form-group">
                         <label for="time-input">First Train Time (HH:mm- military time)</label>
-                        <input type="time" class="form-control" id="time-input" placeholder="add time here">
+                        <input type="text" class="form-control" id="time-input" placeholder="add time here">
                     </div>
                     <div class="form-group">
-                        <label for="frquency-input">Frequency(min)</label>
-                        <input type="frequency" class="form-control" id="frequency-input"
-                            placeholder="add frequency here">
+                        <label for="frequency-input">Frequency(min)</label>
+                        <input type="text" class="form-control" id="frequency-input" placeholder="add frequency here">
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-primary add-train">Submit</button>
                 </form>
             </p>
         </div>
     </div>
 
-    <div id="add-train"></div>
 
 
     <!-- Bootstrap JS -->
