@@ -67,6 +67,8 @@ database.ref().on("child_added", function (databaseData) {
     var tnMinutesAway = "To be calculated"
 
 
+
+    // I followed the example but the following code made the rest of the code ten times worse so I left it commented. I know this is suppose to calculate the time and arrival of the following train.
     // var frequency = 5;
 
     // var firstTime = "06:00";
