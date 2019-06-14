@@ -27,11 +27,11 @@ $("#add-train").on("click", function (event) {
     event.preventDefault(event);
 
     trainNames = $("#name-input").val().trim().
-    trainDestinations = $("#destination-input").val().trim().
-    trainFrequencies = $("#frequency-input").val().trim().
-    firstTrain = $("#time-input").val().trim().
+        trainDestinations = $("#destination-input").val().trim().
+            trainFrequencies = $("#frequency-input").val().trim().
+                firstTrain = $("#time-input").val().trim().
 
-    console.log(trainNames);
+                    console.log(trainNames);
     console.log(trainDestinations);
     console.log(trainFrequencies);
     console.log(firstTrain);
@@ -53,7 +53,7 @@ $("#add-train").on("click", function (event) {
     $("#frequency-input").text("");
     $("#time-input").text("");
 
-    database.ref().on("child_added", function(databaseData) {
+    database.ref().on("child_added", function (databaseData) {
 
         console.log(databaseData).val()
 
